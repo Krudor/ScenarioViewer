@@ -40,7 +40,7 @@ namespace ScenarioViewer.Utils.Misc
             => GetWowheadDataSectionUrl(WowheadDataSection.Spell, spellId);
 
         public static string GetWowheadURLForCreature(uint creatureId)
-            => GetWowheadDataSectionUrl(WowheadDataSection.Creature, creatureId);
+            => GetWowheadDataSectionUrl(WowheadDataSection.Npc, creatureId);
 
         public static string GetWowheadURLForQuest(uint questId)
             => GetWowheadDataSectionUrl(WowheadDataSection.Quest, questId);
@@ -58,7 +58,7 @@ namespace ScenarioViewer.Utils.Misc
     public enum WowheadDataSection
     {
         Spell,
-        Creature,
+        Npc,
         Quest,
         Achievement,
         Item,
